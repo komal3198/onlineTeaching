@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        #header{
+             font-weight: bold;
+             color: blueviolet;
+             text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    
+    <h2 class="pt-3" id="header">Welcome To Video Chat Application</h2>
+   
+    <div class="row pt-2">
+      <div class="col-md-3">
+        
+      </div>
+       <div class="col-md-6">
+         <div class="card">
+            <div class="card-body">
+               <h3 class="text-center">
+                   Create Room
+               </h3>
+               
+               <form action="/homepage" method="POST"> 
+               <div class="row pt-2">
+                  <div class="col-md-12">
+                   <label>Enter User Name</label>
+                   <input type="text" class="form-control" placeholder="enter your Name " name="username">
+                  </div>
+                  <!-- <div class="col-md-12">
+                    <label>Enter Password</label>
+                    <input type="text" class="form-control" placeholder="enter your password " name="password">
+                   </div> -->
+                  <div class="col-md-12">
+                    <label>Enter Room Name</label>
+                    <input type="text" class="form-control" placeholder="enter Room Name" name="roomName">
+                   </div>
+                   <div class="col-md-12 pt-2">
+                    <button class="btn btn-primary" type="submit">  
+                        
+                        <a href="/room" class="text-white">Create Room </a></button> 
+                        <button class="btn btn-primary">  
+                          Submit
+                         </button>
+                    
+                   </div>
+                  
+               </div>
+               </form>
+            </div>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-3">
+       
+     </div>
+    </div>
+    </div>
+</body>
+</html>
